@@ -1,0 +1,99 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.achievement {
+    background-color: blanchedalmond;
+}
+
+.yJersey{
+    color: yellow;
+}
+
+.pJersey {
+    color: rgb(236, 119, 138);
+}
+.rJersey {
+    color: red;
+}
+
+body {
+    font-family: Times, serif;
+    background: rgb(216, 215, 223);
+    width: 100%;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    color: #3911be;
+}
+
+h5 {
+    color: #bc0c29;
+}
+
+header>.title {
+    margin-bottom: 0px;
+}
+
+body .bio {
+    padding: 0px 0.5rem;
+    text-align: left;
+}
+
+.header {
+    
+    width: 100%;
+    text-align: center;
+    background-color: rgb(216, 215, 223);
+}
+
+.tribute {
+    display: grid;
+    background: gainsboro;
+    color: rgb(5, 5, 9);
+
+}
+
+.tribute blockquote {
+    text-align: left;
+    
+}
+
+.tribute img {
+    width: 100%;
+}
+
+
+
+.bio>h2 {
+    margin-bottom: 1rem;
+    font-size: auto;
+}
+
+.bio>p {
+    font-size: auto;
+  
+}
+
+.bio>hr {
+    margin-top: 1px;
+}
+
+.theMyth{
+    background-color: rgb(216, 215, 223);
+}
+
+
+
