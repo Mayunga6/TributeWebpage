@@ -4,19 +4,38 @@
     box-sizing: border-box;
 }
 
-.achievement {
+#achievement {
     background-color: blanchedalmond;
+    text-align: center;
 }
 
 .yJersey{
     color: yellow;
+    background: black;
 }
 
 .pJersey {
     color: rgb(236, 119, 138);
+    background: black;
 }
 .rJersey {
     color: red;
+    background: black;
+}
+
+.classics{
+    background: black;
+    color: white;
+}
+
+.etapa{
+    background: black;
+    color: white;
+}
+
+.crits{
+    background: black;
+    color: white;
 }
 
 body {
@@ -24,6 +43,7 @@ body {
     background: rgb(216, 215, 223);
     width: 100%;
     text-align: center;
+  
 }
 
 footer {
@@ -38,62 +58,77 @@ h2 {
 h3 {
     color: #3911be;
 }
+h4{
+    width: 40%;
+}
 
 h5 {
-    color: #bc0c29;
+    color: white;
+    background: black;
+    width: 25%;
+    border-radius: 50%;
 }
 
 header>.title {
     margin-bottom: 0px;
 }
 
-body .bio {
+body #bio {
     padding: 0px 0.5rem;
     text-align: left;
 }
 
-.header {
+nav{
+    background: #22bcd3;
+}
+
+#header {
     
     width: 100%;
     text-align: center;
     background-color: rgb(216, 215, 223);
 }
 
-.tribute {
+#tribute {
     display: grid;
-    background: gainsboro;
-    color: rgb(5, 5, 9);
+   
 
 }
 
-.tribute blockquote {
+#tribute blockquote {
     text-align: left;
     
 }
 
-.tribute img {
+#tribute img {
     width: 100%;
 }
 
 
 
-.bio>h2 {
+#bio>h2 {
     margin-bottom: 1rem;
     font-size: auto;
 }
 
-.bio>p {
+#bio>p {
     font-size: auto;
   
 }
 
-.bio>hr {
+#bio>hr {
     margin-top: 1px;
 }
 
-.theMyth{
+#theMyth{
     background-color: rgb(216, 215, 223);
 }
 
+#Gracias{
+    background-color:#22bcd3;
+    border-top-width: 15px ;
+}
 
-
+#Gracias p{
+    font-size: large;
+}
