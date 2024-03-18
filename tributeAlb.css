@@ -1,134 +1,114 @@
-* {
-    margin: 0px;
-    padding: 0px;
+*{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-#achievement {
-    background-color: blanchedalmond;
+body{
+    background-color: rgb(2, 14, 25);
+    font-family: Times, serif;
+}
+
+
+.container{
+    background-color: grey;
+    width: 800px;
+    margin: 20px auto;
+    max-width: 1000px;
+    height: auto;
+}
+
+blockquote{
+    background-color: rgb(45, 154, 227);
+}
+
+nav{
+    font-size: large;
+}
+
+nav a:hover {
+    color: white;
+}
+
+header {
+    width: 100%;
     text-align: center;
 }
 
-.yJersey{
+h1{
+    color: rgb(11, 11, 105);
+}
+
+h2,h3{
+    text-align: center;
+}
+
+.grandTours{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grandTours section{
+    flex: 250px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.yJersey {
     color: yellow;
-    background: black;
+    background-color: black;
 }
 
 .pJersey {
     color: rgb(236, 119, 138);
-    background: black;
+    background-color: black;
 }
+
 .rJersey {
     color: red;
-    background: black;
+    background-color: black;
 }
 
-.classics{
-    background: black;
+.otherRaces{
     color: white;
 }
 
-.etapa{
-    background: black;
-    color: white;
-}
-
-.crits{
-    background: black;
-    color: white;
-}
-
-body {
-    font-family: Times, serif;
-    background: rgb(216, 215, 223);
-    width: 100%;
-    text-align: center;
-  
-}
-
-footer {
-    text-align: center;
-}
-
-
-h2 {
-    text-align: center;
-}
-
-h3 {
-    color: #3911be;
-}
-h4{
-    width: 40%;
-}
-
-h5 {
-    color: white;
-    background: black;
-    width: 25%;
-    border-radius: 50%;
-}
-
-header>.title {
-    margin-bottom: 0px;
-}
-
-body #bio {
-    padding: 0px 0.5rem;
-    text-align: left;
-}
-
-nav{
-    background: #22bcd3;
-}
-
-#header {
-    
-    width: 100%;
-    text-align: center;
-    background-color: rgb(216, 215, 223);
-}
-
-#tribute {
-    display: grid;
-   
-
-}
-
-#tribute blockquote {
-    text-align: left;
-    
-}
-
-#tribute img {
-    width: 100%;
-}
-
-
-
-#bio>h2 {
-    margin-bottom: 1rem;
-    font-size: auto;
-}
-
-#bio>p {
-    font-size: auto;
-  
-}
-
-#bio>hr {
-    margin-top: 1px;
+.biosect{
+    margin: 10px;
 }
 
 #theMyth{
-    background-color: rgb(216, 215, 223);
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
-#Gracias{
-    background-color:#22bcd3;
-    border-top-width: 15px ;
+#theMyth section{
+    padding: 15px;
+    flex: 250px;
+    border: 1px solid green;
+    border-radius: 1px;
 }
 
-#Gracias p{
+#theMyth h5 {
+    text-align: center;
+}
+
+.imageload{
+    border-radius: 10px;
+}
+
+#Gracias p {
     font-size: large;
+}
+
+#Gracias {
+    border-top-width: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+footer{
+    text-align: center;
 }
