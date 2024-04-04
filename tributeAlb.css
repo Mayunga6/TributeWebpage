@@ -153,7 +153,7 @@ main #Allwins  {
 }
 
 #theMyth section figure img{
-    width: 400px;
+    width: 300px;
     height: 400px;
     border: 1px solid transparent;
 }
@@ -207,4 +207,390 @@ nav a{
 
 header h3{
     color: white;
+}
+
+/* large screen */
+@media (max-width: 920px){
+    #theMyth section figure img {
+            width: 300px;
+            height: 200px;
+    
+        }
+}
+
+/* Medium screen */
+
+@media (max-width: 768px) {
+
+    body {
+        letter-spacing: 1.0px;
+        width: 500px;
+    }
+
+    .container {
+        width: 500px;
+        margin: 10px auto;
+        height: auto;
+    }
+
+    blockquote {
+        
+        padding-bottom: 20px;
+        padding-top: 20px;
+        border: 1px solid transparent;
+        margin: 10px;
+        border-radius: 5px;
+    }
+
+    nav {
+        font-size: 15px;
+        margin: 10px;
+    }
+
+    nav a {
+        padding: 10px;
+        transition: .4s ease;
+        border: 1px solid transparent;
+        border-radius: 2px;
+    }
+
+    header {
+        width: 100%;
+        text-align: center;
+    }
+
+    h1 {
+        margin-bottom: 15px;
+    }
+
+    h2,
+    h3 {
+        text-align: center;
+    }
+
+    .grandTours {
+        display: grid;
+        grid-template-columns: 1fr;
+        font-family: 'san-serif';
+        margin: 5px;
+    }
+
+    .grandTours section {
+        padding: 10px;
+        margin: 5px;
+        border-radius: 5px;
+    }
+
+    main .grandTours h4 {
+        text-align: center;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    .biosect {
+        margin: 10px;
+    }
+
+    main .biosect h2 {
+        font-size: 17px;
+        padding-bottom: 10px;
+
+    }
+
+    main .biosect p {
+        margin: 10px;
+
+    }
+
+    main #achievements,
+    #Allwins {
+        font-size: 15px;
+        padding-top: 10px;
+    }
+
+    main #achievements {
+        padding-bottom: 10px;
+    }
+
+    main h3 {
+        padding-bottom: 10px;
+    }
+
+    main #Allwins {
+        padding-bottom: 10px;
+        margin-top: 25px;
+    }
+
+    #theMyth {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        justify-content: center;
+        
+    }
+
+    #theMyth section {
+        padding: 10px;
+        gap: 10px;
+        margin: 5px;
+        border-radius: 10px;
+
+    }
+
+    #theMyth section figure img {
+        width: 100%;
+        height: 200px;
+        
+    }
+
+    #theMyth h5 {
+        text-align: center;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .imageload {
+        border-radius: 10px;
+    }
+
+    #Gracias p {
+        font-size: 17px;
+        margin-bottom: 12px;
+        margin-top: 12px;
+    }
+
+    #Gracias {
+        border-top-width: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .container footer {
+        text-align: center;
+        justify-content: center;
+        width: 2px;
+        margin: 10px;
+    }
+
+    .container footer p{
+        
+        width: 350px;
+        margin: 10px;
+    }
+
+
+    .title {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 427px){
+    body {
+            letter-spacing: 0.9px;
+            width: 330px;
+        }
+    
+    
+        .container {
+            width: 320px;
+            margin: 10px auto;
+            height: auto;
+        }
+        blockquote {
+            padding-bottom: 10px;
+            padding-top: 10px;
+            border: 1px solid transparent;
+            margin: 10px;
+            border-radius: 5px;
+            width: 310px;
+        }
+
+        header {
+            width: 320;
+            text-align: center;
+            margin: 10px auto;
+           
+        }
+        nav {
+        font-size: 20px;
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 350px){
+        body {
+                letter-spacing: 0.9px;
+                width: 330px;
+            }
+        
+        
+            .container {
+                width: 330px;
+                margin: 10px auto;
+                height: auto;
+            }
+        
+            blockquote {
+                padding-bottom: 10px;
+                padding-top: 10px;
+                border: 1px solid transparent;
+                margin: 10px;
+                border-radius: 5px;
+            }
+        
+            nav {
+                font-size: 10px;
+                margin: 10px;
+            }
+        
+            nav a {
+                padding: 10px;
+                border-radius: 2px;
+            }
+        
+            header {
+                width: 100%;
+                text-align: center;
+            }
+        
+            h1 {
+                margin-bottom: 10px;
+            }
+        
+            h2,
+            h3 {
+                text-align: center;
+            }
+        
+            .grandTours {
+                display: grid;
+                grid-template-columns: 1fr;
+                font-family: 'san-serif';
+                margin: 5px;
+            }
+        
+            .grandTours section {
+                padding: 10px;
+                margin: 5px;
+                border-radius: 5px;
+            }
+        
+        
+            main .grandTours h4 {
+                text-align: center;
+                border-radius: 10px;
+                margin-bottom: 10px;
+                padding: 10px;
+            }
+        
+            .biosect {
+                margin: 10px;
+            }
+        
+            main .biosect h2 {
+                font-size: 15px;
+                padding-bottom: 10px;
+        
+            }
+        
+            main .biosect p {
+                margin: 10px;
+        
+            }
+        
+            main #achievements,
+            #Allwins {
+                font-size: 15px;
+                padding-top: 10px;
+            }
+        
+            main #achievements {
+                padding-bottom: 10px;
+            }
+        
+            main h3 {
+                padding-bottom: 10px;
+            }
+        
+            main #Allwins {
+                padding-bottom: 10px;
+                margin-top: 25px;
+            }
+        
+            #theMyth {
+                padding: 10px;
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 10px;
+                justify-content: center;
+        
+            }
+        
+            #theMyth section {
+                padding: 10px;
+                gap: 10px;
+                margin: 5px;
+                border-radius: 10px;
+        
+            }
+        
+            #theMyth section figure img {
+                width: 100%;
+                height: 150px;
+        
+            }
+        
+        
+        
+            #theMyth h5 {
+                text-align: center;
+                border-radius: 20px;
+                margin-bottom: 20px;
+                font-size: 20px;
+            }
+        
+            .imageload {
+                border-radius: 10px;
+            }
+        
+            #Gracias p {
+                font-size: 15px;
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+        
+            #Gracias {
+                border-top-width: 10px;
+                text-align: center;
+                width: 100%;
+            }
+        
+            .container footer {
+                text-align: center;
+                justify-content: center;
+                width: 2px;
+                margin: 10px;
+            }
+        
+            .container footer p {
+        
+                width: 350px;
+                margin: 10px;
+            }
+        
+        
+            .title {
+                font-size: 20px;
+            }
+            iframe{
+                width: 80%;
+                height: 70%;
+            }
 }
