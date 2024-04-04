@@ -7,26 +7,31 @@
 body{
     background-color: rgb(2, 14, 25);
     font-family: Times, serif;
-    letter-spacing: 1.2px;
+    letter-spacing: 1.5px;
+    max-width: 1000px;
 }
 
 
 .container{
     background-color: grey;
     width: 800px;
-    margin: 20px auto;
+    margin: 20px 30px;
     max-width: 1000px;
     height: auto;
+    overflow-x: hidden;
 }
 
-blockquote{
+header blockquote{
     background-color: whitesmoke;
-    padding-bottom: 30px;
-    padding-top: 30px;
+    padding: 30px 30px;
     border: 1px solid transparent;
     font-family: 'Times New Roman';
-    margin: 20px;
+    margin-right: 100px;
     border-radius: 10px;
+}
+
+header h3{
+    margin-bottom: 20px;
 }
 
 nav{
@@ -46,6 +51,7 @@ nav a:hover {
 }
 
 header {
+    padding: 30px;
     width: 100%;
     text-align: center;
 }
@@ -135,7 +141,7 @@ main #Allwins  {
     margin-top: 40px;
 }
  
-#theMyth{
+main .container .theMyth{
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -143,7 +149,7 @@ main #Allwins  {
     background-color: grey;
 }
 
-#theMyth section{
+main .container .theMyth section{
     padding: 30px;
     flex: 250px;
     border: 1px solid lightblue;
@@ -152,22 +158,22 @@ main #Allwins  {
     
 }
 
-#theMyth section figure img{
+main .container .theMyth section figure img{
     width: 300px;
     height: 400px;
     border: 1px solid transparent;
 }
 
-main #theMyth .voided{
+main .container .theMyth .voided{
   color: #fff;
 }
 
-main #theMyth .voided h5 {
+main .container .theMyth .voided h5 {
     color: rgb(194, 16, 16);
     background-color: rgb(13, 13, 48);
 }
 
-#theMyth h5 {
+main .container .theMyth h5 {
     text-align: center;
     background-color: white;
     border-radius: 40px;
@@ -210,33 +216,85 @@ header h3{
 }
 
 /* large screen */
-@media (max-width: 920px){
-    #theMyth section figure img {
-            width: 300px;
-            height: 200px;
+@media(max-width:1024px){
+    .container {
+            background-color: grey;
+            margin: 20px auto;
+            height: auto;
+            overflow-x: hidden;
+        }
     
+        blockquote {
+            background-color: whitesmoke;
+            padding-bottom: 30px;
+            padding-top: 30px;
+            border: 1px solid transparent;
+            font-family: 'Times New Roman';
+            margin-right: 0 30px;
+            border-radius: 20px;
+            width: 100%;
+        }
+
+        header {
+            width: 100%;
+            text-align: center;
+        }
+
+}
+
+@media (max-width: 920px){
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+    main .container .theMyth section figure img {
+            width: 700px;
+            height: 500px;
+    
+        }
+    body {
+            letter-spacing: 1.5px;
+            width: 700px;
+            margin: 0 auto;
+        }
+        
+    .container {
+            width: 100%;
+            margin: 30px auto;
+            height: 100%;
+            overflow-x: hidden;
         }
 }
 
 /* Medium screen */
 
 @media (max-width: 768px) {
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
     body {
         letter-spacing: 1.0px;
-        width: 500px;
+        width: 767px;
+        margin: 0 auto;
     }
 
     .container {
-        width: 500px;
+        width: 100%;
         margin: 10px auto;
         height: auto;
+        overflow-x: hidden;
     }
 
     blockquote {
         
         padding-bottom: 20px;
         padding-top: 20px;
+        margin-right: 30px;
         border: 1px solid transparent;
         margin: 10px;
         border-radius: 5px;
@@ -270,7 +328,7 @@ header h3{
 
     .grandTours {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         font-family: 'san-serif';
         margin: 5px;
     }
@@ -314,39 +372,42 @@ header h3{
     }
 
     main h3 {
-        padding-bottom: 10px;
+        padding-bottom: 20px;
     }
-
-    main #Allwins {
+    main .container .theMyth .voided h5{
+        padding: 20px;
+    }
+    main .container #Allwins {
         padding-bottom: 10px;
         margin-top: 25px;
     }
 
-    #theMyth {
+    main .container .theMyth {
         padding: 10px;
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 10px;
         justify-content: center;
         
     }
 
-    #theMyth section {
+    main .container .theMyth section {
         padding: 10px;
-        gap: 10px;
         margin: 5px;
         border-radius: 10px;
+        text-align: center;
 
     }
 
-    #theMyth section figure img {
+    main .container .theMyth section figure img {
         width: 100%;
         height: 200px;
         
     }
 
-    #theMyth h5 {
+    main .container .theMyth h5 {
         text-align: center;
+        padding: 10px;
         border-radius: 20px;
         margin-bottom: 20px;
         font-size: 20px;
@@ -371,13 +432,14 @@ header h3{
     .container footer {
         text-align: center;
         justify-content: center;
-        width: 2px;
+        width: 100%;
         margin: 10px;
     }
 
     .container footer p{
         
-        width: 350px;
+        width: 100%;
+        height: 60% ;
         margin: 10px;
     }
 
@@ -388,29 +450,39 @@ header h3{
 
 }
 
-@media (max-width: 427px){
+@media (max-width: 426px){
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
     body {
             letter-spacing: 0.9px;
-            width: 330px;
+            width: 100%;
+            margin: 0 auto;
         }
     
     
         .container {
-            width: 320px;
+            width: 100%;
+            padding: 0 30px;
             margin: 10px auto;
             height: auto;
+            overflow-x: hidden;
         }
         blockquote {
             padding-bottom: 10px;
             padding-top: 10px;
             border: 1px solid transparent;
-            margin: 10px;
+            margin: 20px;
             border-radius: 5px;
-            width: 310px;
+            width: 100%;
+            margin-right: 30px;
         }
 
         header {
-            width: 320;
+            width: 100%;
             text-align: center;
             margin: 10px auto;
            
@@ -422,109 +494,362 @@ header h3{
         grid-template-columns: 1fr;
     }
 
+    .grandTours {
+        display: grid;
+        grid-template-columns: 1fr;
+        font-family: 'san-serif';
+        margin: 5px;
+    }
+    main .container .theMyth{
+        border-radius: 10px;
+        display: block;
+    }
+
+    main .container .theMyth section h5{
+        padding: 3px;
+    }
+
+    main .container .theMyth section figure img {
+        width: 100%;
+        height: 300px;
+    
+    }
+    .container footer {
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        margin: 10px;
+    }
+        
+    .container footer p {
+        
+        width: 100%;
+        margin: 10px;
+    }
+        
+        
+    .title {
+        font-size: 20px;
+    }
+        
+    iframe {
+        width: 80%;
+        height: 70%;
+    }
+
+}
+
+@media (max-width: 376px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        letter-spacing: 1.0px;
+        max-width: 376px;
+        margin: 0 auto;
+    }
+
+
+    .container {
+        width: 100%;
+        margin: 10px auto;
+        height: auto;
+        overflow-x: hidden;
+    }
+
+    blockquote {
+        padding-bottom: 10px;
+        padding-top: 10px;
+        border: 1px solid transparent;
+        margin: 10px;
+        border-radius: 5px;
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    nav {
+        font-size: 17px;
+        margin: 10px;
+    }
+
+    nav a {
+        padding: 15px;
+        border-radius: 2px;
+    }
+
+    header {
+        width: 100%;
+        text-align: center;
+    }
+
+    h1 {
+        margin-bottom: 10px;
+    }
+
+    h2,
+    h3 {
+        text-align: center;
+    }
+
+    .grandTours {
+        display: grid;
+        grid-template-columns: 1fr;
+        font-family: 'san-serif';
+        margin: 5px;
+    }
+
+    .grandTours section {
+        padding: 10px;
+        margin: 5px;
+        border-radius: 5px;
+    }
+
+
+    main .grandTours h4 {
+        text-align: center;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    .biosect {
+        margin: 10px;
+    }
+
+    main .biosect h2 {
+        font-size: 15px;
+        padding-bottom: 10px;
+
+    }
+
+    main .biosect p {
+        margin: 10px;
+
+    }
+
+    main #achievements,
+    #Allwins {
+        font-size: 15px;
+        padding-top: 10px;
+    }
+
+    main #achievements {
+        padding-bottom: 10px;
+    }
+
+    main h3 {
+        padding-bottom: 10px;
+    }
+
+    main #Allwins {
+        padding-bottom: 10px;
+        margin-top: 25px;
+    }
+
+    main .container {
+        padding: 10px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    
+    }
+
+    main .container #Allwins{
+        border-bottom: 2px dotted black;
+    }
+
+    main .container .theMyth {
+        padding: 10px;
+
+    }
+
+    main .container .theMyth{
+        width: 100%;
+        padding: 10px;
+        margin: 10px auto;
+        display: block;
+        border-radius: 10px;
+    }
+
+    main .container .theMyth section {
+        width: 100%;
+        padding: 10px;
+        margin: 10px auto;
+        border: 1px solid lightblue;
+        border-radius: 10px;
+    }
+
+    main  .container .theMyth section figure img {
+        width: 100%;
+        height: 150px;
+
+    }
+
+    main  .container .theMyth section h5 {
+        width: 100%;
+        text-align: center;
+        background-color: black;
+        color: #fff;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .imageload {
+        border-radius: 10px;
+    }
+
+    #Gracias p {
+        font-size: 15px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    #Gracias {
+        border-top-width: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .container footer {
+        text-align: center;
+        justify-content: center;
+        width: 2px;
+        margin: 10px;
+    }
+
+    .container footer p {
+
+        width: 350px;
+        margin: 10px;
+    }
+
+
+    .title {
+        font-size: 20px;
+    }
+
+    iframe {
+        width: 80%;
+        height: 70%;
+    }
 }
 
 @media (max-width: 350px){
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
                 letter-spacing: 0.9px;
-                width: 330px;
+                width: 100%;
             }
         
         
-            .container {
-                width: 330px;
+        .container {
+                width: 100%;
                 margin: 10px auto;
                 height: auto;
+                overflow-x: hidden;
             }
         
-            blockquote {
+        blockquote {
                 padding-bottom: 10px;
                 padding-top: 10px;
                 border: 1px solid transparent;
                 margin: 10px;
                 border-radius: 5px;
+                width: 100%;
             }
         
-            nav {
+        nav {
                 font-size: 10px;
                 margin: 10px;
             }
         
-            nav a {
+        nav a {
                 padding: 10px;
                 border-radius: 2px;
             }
         
-            header {
+        header {
                 width: 100%;
                 text-align: center;
             }
         
-            h1 {
+        h1 {
                 margin-bottom: 10px;
             }
         
-            h2,
-            h3 {
+        h2,
+        h3 {
                 text-align: center;
             }
         
-            .grandTours {
+        .grandTours {
                 display: grid;
                 grid-template-columns: 1fr;
                 font-family: 'san-serif';
                 margin: 5px;
             }
         
-            .grandTours section {
+        .grandTours section {
                 padding: 10px;
                 margin: 5px;
                 border-radius: 5px;
             }
         
         
-            main .grandTours h4 {
+        main .grandTours h4 {
                 text-align: center;
                 border-radius: 10px;
                 margin-bottom: 10px;
                 padding: 10px;
             }
         
-            .biosect {
+        .biosect {
                 margin: 10px;
             }
         
-            main .biosect h2 {
+        main .biosect h2 {
                 font-size: 15px;
                 padding-bottom: 10px;
         
             }
         
-            main .biosect p {
+        main .biosect p {
                 margin: 10px;
         
             }
         
-            main #achievements,
-            #Allwins {
+        main #achievements,
+        #Allwins {
                 font-size: 15px;
                 padding-top: 10px;
-            }
+        }
         
-            main #achievements {
+        main #achievements {
                 padding-bottom: 10px;
             }
         
-            main h3 {
+        main h3 {
                 padding-bottom: 10px;
             }
         
-            main #Allwins {
+        main .container #Allwins {
                 padding-bottom: 10px;
                 margin-top: 25px;
             }
         
-            #theMyth {
+        main .container .theMyth {
                 padding: 10px;
                 display: grid;
                 grid-template-columns: 1fr;
@@ -533,7 +858,7 @@ header h3{
         
             }
         
-            #theMyth section {
+        main .container .theMyth section {
                 padding: 10px;
                 gap: 10px;
                 margin: 5px;
@@ -541,7 +866,7 @@ header h3{
         
             }
         
-            #theMyth section figure img {
+        main .container .theMyth section figure img {
                 width: 100%;
                 height: 150px;
         
@@ -549,47 +874,48 @@ header h3{
         
         
         
-            #theMyth h5 {
+        main .container .theMyth h5 {
                 text-align: center;
                 border-radius: 20px;
                 margin-bottom: 20px;
-                font-size: 20px;
+                font-size: 15px;
+                padding: 10px;
             }
         
-            .imageload {
+        .imageload {
                 border-radius: 10px;
             }
         
-            #Gracias p {
+        #Gracias p {
                 font-size: 15px;
                 margin-bottom: 10px;
                 margin-top: 10px;
             }
         
-            #Gracias {
+        #Gracias {
                 border-top-width: 10px;
                 text-align: center;
                 width: 100%;
             }
         
-            .container footer {
+        .container footer {
                 text-align: center;
                 justify-content: center;
                 width: 2px;
                 margin: 10px;
             }
         
-            .container footer p {
+        .container footer p {
         
                 width: 350px;
                 margin: 10px;
             }
         
         
-            .title {
+        .title {
                 font-size: 20px;
             }
-            iframe{
+        iframe{
                 width: 80%;
                 height: 70%;
             }
